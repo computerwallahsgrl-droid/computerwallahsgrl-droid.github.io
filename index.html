@@ -17,8 +17,22 @@ h1{font-size:48px;line-height:1.08;margin:18px 0 12px}.hero p{font-size:18px;lin
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{padding:13px 19px;border-radius:10px;font-weight:700;background:#0b63ce;color:#fff}.btn.alt{background:#fff;color:#0b63ce;border:1px solid #b9d5f7}  
 .hero-card{background:#fff;border-radius:22px;padding:25px;box-shadow:0 15px 45px #163c6818}.hero-card h3{margin-top:0}.mini{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini div{padding:17px;border:1px solid #e6edf6;border-radius:14px;background:#fbfdff;font-weight:700}  
 section{padding:58px 6%}.title{text-align:center;margin-bottom:30px}.title h2{font-size:32px;margin:0 0 8px}.title p{color:#68778c}  
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e6edf5;border-radius:17px;padding:22px;box-shadow:0 8px 25px #163c680b}.icon{font-size:30px}.card h3{margin:12px 0 7px}.card p{color:#66758a;line-height:1.5;font-size:14px}  
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e6edf5;border-radius:17px;padding:22px;box-shadow:0 8px 25px #163c680b}.icon{font-size:30px}.card h3{margin:12px 0 7px}.card p{color:#66758a;line-height:1.5;font-size:14px; margin-bottom: 10px;}  
+
+/* Dropdown List Styles */
+details { background: #fbfdff; border: 1px solid #e6edf6; border-radius: 8px; padding: 10px; margin-top: 10px; }
+summary { font-size: 14px; font-weight: 700; color: #0b63ce; cursor: pointer; outline: none; list-style: none; text-align: center; }
+summary::-webkit-details-marker { display: none; }
+details ul { text-align: left; padding-left: 20px; margin: 10px 0 0 0; color: #53647b; font-size: 14px; line-height: 1.8; }
+details li { border-bottom: 1px solid #f0f4f8; padding: 4px 0; }
+details li:last-child { border-bottom: none; }
+
 .dark{background:#102a43;color:#fff}.dark .title p,.dark .card p{color:#c6d3e2}.dark .card{background:#173653;border-color:#284d6d}  
+.dark details { background: #1a3f63; border-color: #284d6d; }
+.dark summary { color: #82baff; }
+.dark details ul { color: #c6d3e2; }
+.dark details li { border-color: #234361; }
+
 .request{background:#0b63ce;color:#fff;border-radius:24px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.request h2{font-size:32px;margin-top:0}.request p{line-height:1.6;color:#dbeeff}.form{background:#fff;border-radius:18px;padding:20px;color:#152238}.form input,.form textarea,.form select{width:100%;padding:12px;margin:7px 0;border:1px solid #d8e1ec;border-radius:9px;font:inherit}.form button{width:100%;border:0;background:#159447;color:#fff;padding:13px;border-radius:9px;font-weight:800;margin-top:8px}  
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:#fff;border-radius:17px;padding:24px;border:1px solid #e6edf5}.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.social a{padding:10px 13px;border-radius:9px;background:#edf5ff;color:#0759b7;font-weight:700;font-size:14px}  
 footer{background:#091c2e;color:#d6e2ee;padding:30px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:13px;color:#91a7bb}  
@@ -47,12 +61,64 @@ footer{background:#091c2e;color:#d6e2ee;padding:30px 6%;display:flex;justify-con
 </header>  
 <section id="products"><div class="title"><h2>Products</h2><p>आपकी जरूरत के अनुसार products और setup</p></div>  
 <div class="grid">  
-<div class="card"><div class="icon">🖥️</div><h3>Computer / Desktop</h3><p>Office, Editing aur Gaming ke liye desktop systems aur accessories.</p></div>  
-<div class="card"><div class="icon">💻</div><h3>Laptop</h3><p>Laptop sales, accessories aur support.</p></div>  
-<div class="card"><div class="icon">🖨️</div><h3>Printer</h3><p>Printer sales, service aur consumables.</p></div>  
+<div class="card"><div class="icon">🖥️</div><h3>Computer / Desktop</h3><p>Office, Editing aur Gaming ke liye desktop systems.</p>
+  <details>
+    <summary>Parts & Items देखें ▼</summary>
+    <ul>
+      <li><b>Processor:</b> Intel Core i3, i5, i7 (All Gen) & AMD Ryzen</li>
+      <li><b>RAM:</b> DDR3 (4GB/8GB), DDR4, DDR5 (Desktop & Laptop RAM)</li>
+      <li><b>SSD:</b> 128GB SATA, 128GB NVMe & Higher</li>
+      <li><b>Motherboard:</b> All Brands</li>
+      <li><b>Other:</b> Monitor, Keyboard, Mouse, SMPS</li>
+    </ul>
+  </details>
+</div>  
+<div class="card"><div class="icon">💻</div><h3>Laptop</h3><p>Laptop sales, accessories aur support.</p>
+  <details>
+    <summary>Accessories देखें ▼</summary>
+    <ul>
+      <li>Laptop Bag & Sleeve</li>
+      <li>Cooling Pad</li>
+      <li>Laptop Charger & Adapter</li>
+      <li>Screen Guard & Skin</li>
+    </ul>
+  </details>
+</div>  
+<div class="card"><div class="icon">🖨️</div><h3>Printer</h3><p>Printer sales, service aur consumables.</p>
+  <details>
+    <summary>Items देखें ▼</summary>
+    <ul>
+      <li>Laser & Inkjet Printers</li>
+      <li>Ink Bottles & Cartridges</li>
+      <li>Toner Refill & New Toner</li>
+      <li>Printer Cable & Parts</li>
+    </ul>
+  </details>
+</div>  
 <div class="card"><div class="icon">⚙️</div><h3>New / Assembled PC</h3><p>Office, Video Editing ya Gaming (RGB) ke hisaab se customized PC setup.</p></div>  
-<div class="card"><div class="icon">📹</div><h3>CCTV</h3><p>Camera, DVR/NVR aur complete CCTV setup.</p></div>  
-<div class="card"><div class="icon">🌐</div><h3>Networking</h3><p>Network setup, LAN aur connectivity solutions.</p></div>  
+<div class="card"><div class="icon">📹</div><h3>CCTV</h3><p>Camera, DVR/NVR aur complete CCTV setup.</p>
+  <details>
+    <summary>Items देखें ▼</summary>
+    <ul>
+      <li>Dome & Bullet Cameras (HD/IP)</li>
+      <li>DVR & NVR (4/8/16 Channel)</li>
+      <li>Surveillance Hard Drive</li>
+      <li>Power Supply (SMPS) & Cable</li>
+      <li>Connectors (BNC/DC)</li>
+    </ul>
+  </details>
+</div>  
+<div class="card"><div class="icon">🌐</div><h3>Networking</h3><p>Network setup, LAN aur connectivity solutions.</p>
+  <details>
+    <summary>Items देखें ▼</summary>
+    <ul>
+      <li>Wi-Fi Routers & Extenders</li>
+      <li>Network Switches (PoE/Non-PoE)</li>
+      <li>LAN Cable (Cat6) & RJ45</li>
+      <li>Networking Rack</li>
+    </ul>
+  </details>
+</div>  
 </div></section>  
 <section id="services" class="dark"><div class="title"><h2>Services</h2><p>Repair, installation और technical support</p></div>  
 <div class="grid">  
@@ -80,8 +146,9 @@ footer{background:#091c2e;color:#d6e2ee;padding:30px 6%;display:flex;justify-con
 <option value="" disabled selected>क्या सर्विस/प्रोडक्ट चाहिए?</option>
 <option>🖥️ Computer - Office Use</option>
 <option>🖥️ Computer - Video Editing Use</option>
-<option>🖥️ Computer - Gaming Use</option>
+<option>🖥️️ Computer - Gaming Use</option>
 <option>💻 Laptop Purchase</option>
+<option>⚙️ PC Parts (Processor, RAM, SSD, etc.)</option>
 <option>📹 CCTV Setup - 4 Cameras</option>
 <option>📹 CCTV Setup - 8 Cameras</option>
 <option>📹 CCTV Setup - 8+ Cameras</option>
@@ -92,7 +159,7 @@ footer{background:#091c2e;color:#d6e2ee;padding:30px 6%;display:flex;justify-con
 <option>💾 Data Recovery</option>
 <option>🌐 Networking Setup</option>
 </select>
-<textarea id="msg" rows="4" placeholder="अपनी requirement detail में लिखें (जैसे कौन सा लैपटॉप या कौन सा सॉफ्टवेयर)"></textarea>
+<textarea id="msg" rows="4" placeholder="अपनी requirement detail में लिखें (जैसे कौन सा प्रोसेसर, RAM या SSD चाहिए)"></textarea>
 <button>WhatsApp पर Requirement भेजें</button>
 </form></div></section>  
 <section id="contact"><div class="title"><h2>Contact Us</h2><p>Computer Wallah SGRL से संपर्क करें</p></div>  
