@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "description": "Computer Wallah SGRL - Computer, Laptop, Printer, CCTV, Software, Networking &amp; Data Recovery",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ComputerWallahSGRL",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Computer Wallah",
+  "start_url": "/",
+  "theme_color": "#0b63ce",
+  "id": "com.computerwallahsgrl.app"
+}
